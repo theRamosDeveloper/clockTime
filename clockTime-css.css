@@ -1,0 +1,84 @@
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-weight: bolder;
+      text-align: center;
+    }
+
+    body {
+      height: auto;
+      /* Para browsers que não suportam gradientes - bg-color*/
+      background-color: black; 
+      background-image: linear-gradient(to right, rgb(26, 0, 75), rgb(0, 0, 0));
+    }
+
+    span {
+      color: red;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #dTimer {
+      color: gray;
+      text-shadow: 1px 1px 1px white;
+      font-size:  calc(1.5rem + 3vw);
+      margin: 20px 0px 100px 0px;
+    }
+
+    #timer {
+      border-radius: 20px;
+      font-size:  calc(3.5rem + 5vw);
+      width: 80vw;
+      margin: 0 auto;
+      box-shadow: 1px 1px 10px lightblue;
+    }
+
+    #timer:hover {
+      border: 1px solid rgb(255, 0, 0);
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p-footer {
+      position: absolute;
+      bottom: 0;
+      color: white;
+    }
+
+    .p-footer:hover,
+    span:hover {
+      color: gray;
+      transition: 1s;
+    }
+
+    @media only screen and (max-width: 480px) { 
+    #timer {
+      margin-top: 60px;
+      font-size:  calc(2.5rem + 5vw);
+    }
+
+    .p-footer {
+      font-size:  calc(0.9rem + 0.1vw);
+    }
+
+  }
+
+    
+    @media only screen and (max-width: 380px) { 
+    #timer {
+      margin-top: 80px;
+      font-size:  calc(1.5rem + 5vw);
+    }
+
+    .p-footer {
+      font-size:  calc(0.7rem + 0.1vw);
+    }
+}
